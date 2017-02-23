@@ -1,0 +1,227 @@
+#itemInfo {
+	float: left;
+	position: relative;
+	width: 310px;
+	margin: 0 30px;
+}
+
+#itemInfo .zoomWrap {
+	width: 100%;
+	height: 310px;
+	border: 1px solid #bbb;
+}
+
+#itemInfo .largeImg {
+	clear: both;
+	display: block;
+	width: 100%;
+	height: 21px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+#itemInfo .largeImg img {
+	display: inline;
+}
+
+#itemInfo .imgList {
+	height: 87px;
+	overflow: hidden;
+	font-size: 0;
+}
+
+#itemInfo .imgList li {
+	display: inline-block;
+	width: 85px;
+	height: 85px;
+	margin: 0 8px;
+	border: 1px solid #fff;
+}
+
+#itemInfo .imgList li:hover,
+#buyInfo .chColor li:hover {
+	border-color: #f00;
+}
+
+#itemInfo .imgList .hide {
+	display: none;
+}
+
+.tab {
+	width: 310px;
+	height: 230px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+.tab ul {
+	font-size: 0;
+}
+
+.tab ul li {
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	border: 1px solid #898989;
+	border-bottom: none;
+	margin-right: 8px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
+
+.tab ul li:hover {
+	background-color: #dfdfdf;
+}
+
+.tab ul li.selected {
+	color: #fff;
+	background-color: #6d84b4;
+}
+
+.tab .tab_box {
+	padding: 5px;
+	border: 1px solid #898989;
+	font-size: 14px;
+}
+
+.tab .hide {
+	display: none;
+}
+
+
+#buyInfo {
+	float: left;
+	width: 430px;
+}
+
+#buyInfo .detailList {
+	margin: 10px 0;
+}
+
+#buyInfo .detailList li {
+	margin: 15px 0;
+}
+
+#buyInfo .detailList .delPrice {
+	text-decoration: line-through;
+}
+
+#buyInfo .detailList .realPrice {
+    color: #f50;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+#buyInfo .chColor ul {
+	font-size: 0;
+}
+
+#buyInfo .chColor li {
+	display: inline-block;
+	margin-right: 10px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+#buyInfo .chColor li.hover {
+	border-color: #f00;
+}
+
+#buyInfo .chSize ul {
+	font-size: 0;
+}
+
+#buyInfo .chSize li {
+	display: inline-block;
+	margin-right: 10px;
+	border: 1px solid #aaa;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+
+}
+
+#buyInfo .chSize li:hover {
+	cursor: pointer;
+}
+
+#buyInfo .chSize li.selected {
+	background-color: #f50;
+}
+
+#buyInfo .chNum {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+#buyInfo .chRating ul {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 16px;
+	margin-left: 5px;
+	font-size: 0;
+}
+
+#buyInfo .chRating li {
+	float: left;
+	width: 20%;
+	height: 100%;
+	cursor: pointer;
+}
+
+#buyInfo .chRating .nostar {
+	background: url("../img/star-matrix.gif") 0 1px no-repeat;
+}
+
+#buyInfo .chRating .one_star {
+	background: url("../img/star-matrix.gif") 0 -15px no-repeat;
+}
+
+#buyInfo .chRating .two_star {
+	background: url("../img/star-matrix.gif") 0 -31px no-repeat;
+}
+
+#buyInfo .chRating .three_star {
+	background: url("../img/star-matrix.gif") 0 -47px no-repeat;
+}
+
+#buyInfo .chRating .four_star {
+	background: url("../img/star-matrix.gif") 0 -63px no-repeat;
+}
+
+#buyInfo .chRating .five_star {
+	background: url("../img/star-matrix.gif") 0 -79px no-repeat;
+}
+
+#buyInfo .chRating .one_hover {
+	background: url("../img/star-matrix.gif") 0 -95px no-repeat;
+}
+
+#buyInfo .chRating .two_hover {
+	background: url("../img/star-matrix.gif") 0 -111px no-repeat;
+}
+
+#buyInfo .chRating .three_hover {
+	background: url("../img/star-matrix.gif") 0 -127px no-repeat;
+}
+
+#buyInfo .chRating .four_hover {
+	background: url("../img/star-matrix.gif") 0 -143px no-repeat;
+}
+
+#buyInfo .chRating .five_hover {
+	background: url("../img/star-matrix.gif") 0 -159px no-repeat;
+}
+
+
+#cart {
+	margin-top: 15px;
+}

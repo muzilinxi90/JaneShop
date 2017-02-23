@@ -1,0 +1,251 @@
+body {
+	width: 1024px;
+	margin: auto;
+}
+
+
+/*头部*/
+#header {
+	position: relative;
+	width: 100%;
+	height: 105px;
+	background: url("../img/headerbg.png") repeat-x;
+}
+
+/*logo*/
+#logo {
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+/*搜索框*/
+#search {
+	position: absolute;
+	left: 300px;
+	margin-top: 25px;
+}
+
+#search input {
+	width: 300px;
+	height: 25px;
+	font-size: 18px;
+}
+
+#search input.focus {
+	border: 1px solid #00A5FF;
+}
+
+/*换肤*/
+#chSkin {
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+	width: 200px;
+	/*去掉li之间的空白间隔*/
+	font-size: 0;
+}
+
+#chSkin li {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: auto 5px;
+	overflow: hidden;
+	background-image: url("../img/theme.gif");
+	cursor: pointer;
+}
+
+#skin_0 {
+	background-position: 0 0;
+}
+
+#skin_1 {
+	background-position: -20px 0;
+}
+
+#skin_2 {
+	background-position: -40px 0;
+}
+
+#skin_3 {
+	background-position: -60px 0;
+}
+
+#skin_4 {
+	background-position: -80px 0;
+}
+
+#skin_5 {
+	background-position: -100px 0;
+}
+
+#skin_0.selected {
+	background-position: 0 15px;
+}
+#skin_1.selected {
+	background-position: -20px 15px;
+}
+
+#skin_2.selected {
+	background-position: -40px 15px;
+}
+
+#skin_3.selected{
+	background-position: -60px 15px;
+}
+
+#skin_4.selected {
+	background-position: -80px 15px;
+}
+
+#skin_5.selected {
+	background-position: -100px 15px;
+}
+
+/*导航菜单*/
+#nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background-color: #4a4a4a;
+}
+
+#nav li {
+	/*inline-block方式会导致加入二级菜单后一级菜单出现问题*/
+	float: left;
+	margin-left: 25px;
+	line-height: 30px;
+}
+
+#nav li a {
+	color: #fff;
+	font-weight: 700;
+}
+
+#nav a:hover {
+	text-decoration: underline;
+}
+
+/*导航二级菜单*/
+#nav .subNav {
+	display: none;
+	position: absolute;
+	top: 30px;
+	width: 500px;
+	padding: 5px 10px;
+	border: 1px solid #b1b1b1;
+	border-top: none;
+	z-index: 99999;
+	background-color: #fff;
+}
+
+#nav .subNav a {
+	color: #000;
+	font-size: 14px;
+}
+
+#nav .subNav .fore {
+	border-bottom: 1px dashed #c4c4c4;
+}
+
+#nav .subNav dt {
+	float: left;
+	width: 15%;
+	text-align: center;
+}
+
+#nav .subNav dd {
+	float: right;
+	width: 85%;
+}
+
+#nav .subNav dd a {
+	display: inline-block;
+	padding: 0 5px 0 0;
+	border-right: 1px solid #aaa;
+	line-height: 14px;
+	color: #aaa;
+}
+
+
+/*主体部分*/
+#content {
+	position: relative;
+	width: 100%;
+	margin-top: 15px; 
+}
+
+/*侧边栏*/
+#sidebar {
+	float: left;
+	position: relative;
+	width: 20%;
+}
+
+#sidebar h2 {
+	height: 30px;
+	padding-left: 15px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #6e6e6e;
+}
+
+#sidebar #cataInfo {
+	padding: 5px 15px;
+	border: 1px solid #6e6e6e;
+	border-top: none;
+}
+
+#sidebar h3 {
+	height: 24px;
+	padding-top: 10px;
+	border-bottom: 1px solid #eee;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+#sidebar ul {
+	width: 100%;
+	font-size: 0;
+}
+
+#sidebar ul li {
+	display: inline-block;
+	width: 50%;
+	font-size: 14px;
+}
+
+#sidebar li a {
+	color: #444;
+}
+
+#sidebar a:hover {
+	color: #008cd7;
+}
+
+#sidebar li a.promoted {
+	color: #f9044e;
+}
+
+#sidebar li a span.hot {
+	display: inline-block;
+	width: 21px;
+	height: 16px;
+	margin-left: 1px;
+	background: url("../img/hot.gif") no-repeat;
+}
+
+
+/*页脚*/
+#footer {
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	text-align: center;
+	line-height: 50px;
+	color: #666;
+	background-color: #eee;
+}

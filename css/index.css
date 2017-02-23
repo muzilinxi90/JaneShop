@@ -1,0 +1,215 @@
+/*轮播广告*/
+#imageRoll {
+	float: left;
+	position: relative;
+	width: 550px;
+	height: 321px;
+	margin: 0 15px;
+}
+
+#imageRoll #imgWrap {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#imageRoll img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#imageRoll ul {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	font-size: 0;
+	background-color: #444;
+	opacity: .7;
+}
+
+#imageRoll li {
+	display: inline-block;
+	width: 109px;
+	height: 100%;
+	border-right: 1px solid #fff;
+	text-align: center;
+	line-height: 23px;
+}
+
+#imageRoll li.last {
+	border-right: none;
+}
+
+#imageRoll li a {
+	display: inline-block;
+	color: #eee;
+	font-size: 12px;
+}
+
+#imageRoll li.chos {
+	background: url("../img/adindex.gif") no-repeat center 47px #37a7d7;
+}
+
+#imageRoll li.chos a {
+	color: #fff;
+	font-weight: 700;
+}
+
+
+/*通知*/
+#notice {
+	float: right;
+	position: relative;
+	width: 230px;
+	height: 321px;
+}
+
+#notice #showImage {
+	width: 100%;
+	height: 176px;
+}
+
+#notice #noticeInfo {
+	margin-top: 10px;
+	border: 1px solid #dfdfdf;
+}
+
+#notice #noticeInfo h2 {
+	border-bottom: 1px solid #dfdfdf;
+	padding: 5px 0 5px 10px;
+	font-size: 14px;
+}
+
+#notice #noticeInfo li {
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+#notice #noticeInfo li a {
+	color: #666;
+}
+
+#tooltip {
+	display: none;
+	position: absolute;
+	border: 1px solid #333;
+	padding: 1px;
+	font-size: 14px;
+	color: #333;
+	background-color: #f7f5d1;
+}
+
+/*品牌活动*/
+#brand {
+	position: relative;
+	float: right;
+	width: 78%;
+	margin-left: 15px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+#brand h2 {
+	float: left;
+	font-size: 14px;
+}
+
+#brandTab {
+	float: right;
+	position: relative;
+	width: 200px;
+	font-size: 0;
+}
+
+#brandTab li {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+}
+
+#brandTab li a {
+	display: block;
+	width: 40px;
+	margin: 0 5px;
+	font-size: 14px;
+	color: #000;
+	background-color: #e4e4e4;
+}
+
+#brandList {
+	clear: both;
+	position: relative;
+	top: -4px;
+	width: 5000px;
+	border-top: 1px solid #efefef;
+	padding-top: 8px;
+	font-size: 0;
+}
+
+#brandList li {
+	position: relative;
+	display: inline-block;
+	width: 183px;
+	margin: 0 8px;	
+}
+
+#brandList li img {
+	height: 164px;
+}
+
+#brandList li span {
+	display: block;
+	width: 183px;
+	height: 24px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 24px;
+	background-color: #efefef;
+}
+
+#brandList li a {
+	color: #666;
+}
+
+#brandList li a:hover {
+	color: #008cd7;
+}
+
+#brandTab li.chos {
+	background: url("../img/chos.gif") no-repeat scroll center bottom transparent;
+	padding-bottom: 3px;
+}
+
+#brandTab .chos a {
+	background-color: #fa5889;
+	color: #fff;
+}
+
+#brandList .imageMask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 183px;
+	height: 164px;
+	background: url("../img/zoom.gif") no-repeat 50% 50%;
+	background-color: #eee;
+	opacity: .3;
+}
+
+
+#notice #showImage img {
+	-webkit-transition: 1s all;
+	   -moz-transition: 1s all;
+	     -o-transition: 1s all;
+	        transition: 1s all;
+}
+
+#notice #showImage:hover img {
+	-webkit-transform: rotate(720deg);
+	   -moz-transform: rotate(720deg);
+		 -o-transform: rotate(720deg);
+			transform: rotate(720deg);
+}
